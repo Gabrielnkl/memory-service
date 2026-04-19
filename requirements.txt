@@ -1,0 +1,31 @@
+# Core Web Framework
+fastapi
+uvicorn
+
+# LangChain
+langchain
+langchain-community
+langchain-openai
+langchain-huggingface
+langchain-chroma
+langchain-redis
+
+# Database Dependencies
+sqlalchemy
+psycopg2-binary
+asyncpg
+redis
+
+# Vector Database & Embeddings
+chromadb
+#torch==2.1.2
+numpy
+
+# Configuration & Utilities
+python-dotenv
+httpx
+pydantic-settings
+
+# Development & Testing (optional)
+#pytest==7.4.3
+#pytest-asyncio==0.21.1
