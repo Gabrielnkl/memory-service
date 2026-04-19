@@ -1,39 +1,3 @@
-# postgres.py - PostgreSQL Database Operations
-#
-# PostgreSQL handles long-term memory storage. It stores:
-# - Full chat history for all users
-# - User metadata
-# - Complete message records with timestamps
-#
-# This is the persistent storage layer - data here survives restarts.
-#
-# What you need to implement:
-# 1. Set up database connection using SQLAlchemy or psycopg2
-# 2. Create database tables/models:
-#    - users table (user_id, created_at, metadata)
-#    - messages table (id, user_id, text, timestamp, embedding_id)
-# 3. Create PostgresService class
-# 4. Implement store_message(user_id: str, text: str, embedding_id: Optional[str]) method:
-#    - Insert message into database
-#    - Handle user creation if new
-# 5. Implement get_user_messages(user_id: str, limit: int = 100) method:
-#    - Retrieve recent messages for a user
-# 6. Implement get_all_messages(user_id: str) method for full history
-# 7. Add connection pooling and error handling
-# 8. Consider async database operations (SQLAlchemy async)
-#
-# For production:
-# - Add database migrations (Alembic)
-# - Add indexes for performance
-# - Add database connection retry logic
-
-# TODO: Import database library (SQLAlchemy, psycopg2)
-# TODO: Define database models/tables
-# TODO: Create PostgresService class
-# TODO: Implement store_message method
-# TODO: Implement message retrieval methods
-# TODO: Add connection management and error handling
-
 import os
 import logging
 from typing import Optional
